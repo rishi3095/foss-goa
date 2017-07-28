@@ -19,6 +19,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
      <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script src="js/index.js"></script>
+
+    <style>
+        .form-control:focus {
+            border-color: #009788;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+        }
+
+        .has-error .form-control:focus {
+            box-shadow: none;
+            -webkit-box-shadow: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -208,25 +221,25 @@
                                                 <div class=" form-line">
                                                     <div class="form-group">
                                                         <div class="input-group" >
-                                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user green"></i></span>
                                                             <input type="text" name="InputName" placeholder="Enter Name" class="form-control" autofocus="autofocus" required>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
                                                         <div class="input-group" >
-                                                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope green"></i></span>
                                                             <input type="email" name="InputEmail" placeholder="Enter Email" class="form-control" required>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
                                                         <div class="input-group" >
-                                                            <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                                                            <span class="input-group-addon"><i class="glyphicon glyphicon-phone green"></i></span>
                                                             <input type="email" name="InputCno" placeholder="Phone : (+91)" class="form-control" required>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
                                                         <div class="input-group" >
-                                                            <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker "></i></span>
+                                                            <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker green "></i></span>
                                                             <textarea class="form-control" rows="4" id="description" placeholder="Enter Address"></textarea>
                                                         </div>
                                                     </div>
