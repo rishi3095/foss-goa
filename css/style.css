@@ -1,3 +1,28 @@
+.modal-open{
+    overflow:visible;
+}
+.modal-open .modal{overflow-x:hidden;overflow-y:hidden;}
+
+.modal-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:hidden}
+
+form{position:relative;}
+
+.breadcrumb {
+    padding: 0px;
+    background: transparent;
+    list-style: none;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    border-radius: 4px;
+    text-align: center;
+}
+ 
+  .breadcrumb li.completed span {
+    
+    color: #009688;
+}
+
 /*card styling*/
 
 body {
