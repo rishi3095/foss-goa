@@ -17,21 +17,9 @@
     <link href='https://fonts.googleapis.com/css?family=Khula' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Cambay' rel='stylesheet'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-     <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script src="js/index.js"></script>
 
-    <style>
-        .form-control:focus {
-            border-color: #009788;
-            box-shadow: none;
-            -webkit-box-shadow: none;
-        }
-
-        .has-error .form-control:focus {
-            box-shadow: none;
-            -webkit-box-shadow: none;
-        }
-    </style>
 </head>
 
 <body>
@@ -105,7 +93,7 @@
 
                                     </ul>
                                 </li>
-                                <li class="col-sm-4" >
+                                <li class="col-sm-4">
                                     <ul>
                                         <li class="dropdown-header">Equipment for underground & open cast mines</li>
                                         <li><a href="#">Transverse cutting units for tunneling & <br>demolition</a></li>
@@ -136,12 +124,162 @@
                 </div>
                 <!-- /.nav-collapse -->
             </nav>
-
-
-
         </div>
 
         <div class="container">
+            <div class="modal fade " id="modal-1">
+
+                <div class="modal-dialog ">
+                    <div class="modal-content">
+                        <div class="modal-header custom-modal-header">
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                            <h4 class="modal-title">Enquire Now</h4>
+                        </div>
+                        <div class="modal-body">
+
+
+                            <div class="row-fluid">
+                                <ul class="breadcrumb">
+                                    <li class="completed"><span>Contact Details</span></li>
+                                    <li><span>Product Information</span></li>
+                                    <li><span>Finalize</span></li>
+                                </ul>
+                            </div>
+
+
+                            <form class="" style="padding-top:8%;">
+                                <div class=" form-line">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user green"></i></span>
+                                            <input type="text" name="InputName" placeholder="Enter Name" class="form-control" autofocus="autofocus" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope green"></i></span>
+                                            <input type="email" name="InputEmail" placeholder="Enter Email" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-phone green"></i></span>
+                                            <input type="email" name="InputCno" placeholder="Phone : (+91)" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker green "></i></span>
+                                            <textarea class="form-control" rows="4" id="description" placeholder="Enter Address"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                        <button class="btn btn-green btn-block text-center" data-dismiss="modal" data-target="#modal-2" data-toggle="modal">NEXT</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-2">
+
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header custom-modal-header">
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                            <h4 class="modal-title">Enquire Now</h4>
+                        </div>
+                        <div class="modal-body">
+
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                            <div class="row-fluid">
+                                <ul class="breadcrumb">
+                                    <li><span>Contact Details</span></li>
+                                    <li class="completed"><span>Product Information</span></li>
+                                    <li><span>Finalize</span></li>
+                                </ul>
+                            </div>
+
+                            <form class="" style="padding-top: 4%">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-xs-3">
+                                            <label  for="quantity">Quantity</label>
+                                            <input type="text" id="quantity" class="form-control" name="quantity">
+                                        </div>
+
+                                        <div class="col-xs-3">
+                                            <label  for="unit">Select Unit</label>
+                                            <select id="units" class="form-control" name="unit">
+                                                                <option value="0" disabled selected>Select from below</option>
+                                                        <option value="Kilograms">Kilograms</option>
+                                                        <option value="Nos">Nos</option>
+                                                        <option value="Pieces">Pieces</option>
+                                                        <option value="Tons">Tons</option>
+                                                        <option value="Unit">Unit</option>
+                                                    </select>
+                                        </div>
+                                        <div class="col-xs-6">
+
+                                            <label  >Approximate Order Value</label>
+                                            <select id="value" class="form-control" name="value">
+                                                        <option value="0" disabled selected>Select from below</option>
+                                    <option value="1k">Upto 1,000</option>
+                                    <option value="1k to 3k">1,000 to 3,000</option>
+                                    <option value="3k to 10k">3,000 to 10,000</option>
+                                    <option value="10k to 20k">10,000 to 20,000</option>
+                                    <option value="20k to 50k">20,000 to 50,000</option>
+                                    <option value="50k to 100k">50,000 to 1 Lakh</option>
+                                </select>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="usage" class="m-t-10">Usage/Application</label>
+                                    <input type="text" id="usage" class="form-control" name="usage">
+                                </div>
+                                <div class="form-group">
+                                    <label for="other" class="m-t-10">Other Requirements</label>
+                                    <textarea name="InputMessage" rows="4" class="form-control" type="text" placeholder="Provide any specific details about :'Product/Service required', 'Quality', 'Standard', 'Size' etc... "></textarea>
+                                </div>
+                            </form>
+                        </div>
+
+                        <button class="btn btn-green btn-block text-center" data-dismiss="modal" data-target="#modal-3" data-toggle="modal">NEXT</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-3">
+
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header custom-modal-header">
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                            <h4 class="modal-title">Enquire Now</h4>
+                        </div>
+
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <div class="row-fluid">
+                                <ul class="breadcrumb">
+                                    <li><span>Contact Details</span></li>
+                                    <li><span>Product Information</span></li>
+                                    <li class="completed"><span>Finalize</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn btn-green btn-block text-center" data-dismiss="modal"><span >DONE</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-4  zoom col-centered">
                     <div class="card">
@@ -156,10 +294,8 @@
                         <br />
                         <div class="card-content">
 
-                            <div class="">
+                            <p class="lead text-center">Category:Dozers</p>
 
-                                <p class="lead text-center">Category:Dozers</p>
-                            </div>
                             <div class=" text-center">
                                 <a class="btn">
                                     <h4>View More info</h4>
@@ -185,13 +321,10 @@
                         <br />
                         <div class="card-content">
 
-                            <div class="">
-
-                                <p class="lead text-center">Category:Mining equipment</p>
-                            </div>
+                            <p class="lead text-center">Category:Mining equipment</p>
                             <div class=" text-center text-capitalize">
-                                <a class="btn">
-                                    <a href="viewmore.html"><h4>View More info</h4></a>
+                                <a href="viewmore.html" class="btn">
+                                    <h4>View More info</h4>
                                 </a>
                             </div>
 
@@ -199,148 +332,7 @@
                         <div class="btcnt" style="text-align:Center">
                             <button type="submit" class="btinqr btn-block" data-target="#modal-1" data-toggle="modal"><p class="s2">ENQUIRE</p></button>
                         </div>
-                        <div class="modal fade " id="modal-1" >
 
-                                <div class="modal-dialog ">
-                                    <div class="modal-content">
-
-                                        <div class="modal-body" style="height:400px">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-
-                                            <div class="row-fluid">
-                                                <ul class="breadcrumb">
-                                                    <li class="completed"><span>Contact Details</span></li>
-                                                    <li><span>Product Information</span></li>
-                                                    <li><span>Finalize</span></li>
-                                                </ul>
-                                            </div>
-
-
-                                            <form class="" style="padding-top:8%;">
-                                                <div class=" form-line">
-                                                    <div class="form-group">
-                                                        <div class="input-group" >
-                                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user green"></i></span>
-                                                            <input type="text" name="InputName" placeholder="Enter Name" class="form-control" autofocus="autofocus" required>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="input-group" >
-                                                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope green"></i></span>
-                                                            <input type="email" name="InputEmail" placeholder="Enter Email" class="form-control" required>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="input-group" >
-                                                            <span class="input-group-addon"><i class="glyphicon glyphicon-phone green"></i></span>
-                                                            <input type="email" name="InputCno" placeholder="Phone : (+91)" class="form-control" required>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="input-group" >
-                                                            <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker green "></i></span>
-                                                            <textarea class="form-control" rows="4" id="description" placeholder="Enter Address"></textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </form>
-                                        </div>
-
-                                        <button class="btinqr btn-block text-center" data-dismiss="modal" data-target="#modal-2" data-toggle="modal">NEXT</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="modal-2">
-
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-
-                                        <div class="modal-body" >
-
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-                                            <div class="row-fluid">
-                                                <ul class="breadcrumb">
-                                                    <li><span>Contact Details</span></li>
-                                                    <li class="completed"><span>Product Information</span></li>
-                                                    <li><span>Finalize</span></li>
-                                                </ul>
-                                            </div>
-
-                                            <form class="" style="padding-top: 4%">
-                                                <div class="row">
-                                                    <div class="form-group">
-                                                        <div class="col-xs-5">
-                                                            <label for="quantity">Quantity</label>
-                                                            <input type="text" id="quantity" class="form-control" name="quantity">
-                                                        </div>
-
-                                                        <div class="col-xs-5">
-                                                            <label for="unit">Select Unit</label>
-                                                            <select id="units" class="form-control" name="unit">
-                                                                <option value="0" disabled selected>Select from below</option>
-                                                        <option value="Kilograms">Kilograms</option>
-                                                        <option value="Nos">Nos</option>
-                                                        <option value="Pieces">Pieces</option>
-                                                        <option value="Tons">Tons</option>
-                                                        <option value="Unit">Unit</option>
-                                                    </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group" style="padding-top: 2%">
-                                                    <label class="m-t-10">Approximate Order Value</label>
-                                                    <select id="value" class="form-control" name="value">
-                                                        <option value="0" disabled selected>Select from below</option>
-                                    <option value="1k">Upto 1,000</option>
-                                    <option value="1k to 3k">1,000 to 3,000</option>
-                                    <option value="3k to 10k">3,000 to 10,000</option>
-                                    <option value="10k to 20k">10,000 to 20,000</option>
-                                    <option value="20k to 50k">20,000 to 50,000</option>
-                                    <option value="50k to 100k">50,000 to 1 Lakh</option>
-                                </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="usage" class="m-t-10">Usage/Application</label>
-                                                    <input type="text" id="usage" class="form-control" name="usage">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="other" class="m-t-10">Other Requirements</label>
-                                                    <textarea name="InputMessage" rows="6" class="form-control" type="text" placeholder="Provide any specific details about :'Product/Service required', 'Quality', 'Standard', 'Size' etc... "></textarea>
-                                                </div>
-                                            </form>
-                                        </div>
-
-                                        <button class="btinqr btn-block text-center" data-dismiss="modal" data-target="#modal-3" data-toggle="modal" >NEXT</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="modal-3">
-
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-
-                                        <div class="modal-body" >
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <div class="row-fluid">
-                                                <ul class="breadcrumb">
-                                                    <li ><span>Contact Details</span></li>
-                                                    <li ><span>Product Information</span></li>
-                                                    <li class="completed"><span>Finalize</span></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <button class="btinqr btn-block text-center" data-dismiss="modal"><span >DONE</span></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4  zoom col-centered">
@@ -466,7 +458,7 @@
         </div>
     </div>
 
- <!-- Footer -->
+    <!-- Footer -->
     <footer class="text-center">
         <div class="footer-above">
             <div class="container">
@@ -474,25 +466,24 @@
                     <div class="footer-col col-md-4">
                         <h3>Location</h3>
                         <p class="addr"><span></span>1110, New Delhi House, 27, Barakhamba Road, New Delhi - 110 001</p>
-       
-        <p><span ></span> sepldel@gmail.com</p>
+
+                        <p><span></span> sepldel@gmail.com</p>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Find us on</h3>
-                        	
-                    <ul class="social-network social-circle">
-                       
-                        <li><a href="#" class="icoFacebook icon" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" class="icoTwitter icon" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" class="icoGoogle icon" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#" class="icoLinkedin icon" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>				
-				
+
+                        <ul class="social-network social-circle">
+
+                            <li><a href="#" class="icoFacebook icon" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="icoTwitter icon" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="icoGoogle icon" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#" class="icoLinkedin icon" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+
                     </div>
                     <div class="col-md-4">
                         <h3>Contact numbers</h3>
-                          +91-11-23315929<br>
-                          +91-11-23312693
+                        +91-11-23315929<br> +91-11-23312693
                     </div>
                 </div>
             </div>
