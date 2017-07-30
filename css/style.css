@@ -1,14 +1,24 @@
 /* modal styling */
-.modal{
-  overflow: visible;
+.modal-open{
+    overflow:visible ;
 }
+/*.modal-open .modal{overflow-x:hidden;overflow-y:visible }*/
+
+.modal.fade.in {overflow-x:hidden; overflow-y:visible;}
+
+.modal-scrollbar-measure {position:absolute;top:-9999px;width:50px;height:50px;overflow:visible}
+
+/*modal form*/
+
+.contact-detail{padding-top:4%}
+.product-info{padding-top: 2%}
 
 @media screen and (max-width: 413px) {
   label{
     font-size: .8em;
   }
 }
-#modal-1 .modal-dialog {
+/*#modal-1 .modal-dialog {
    
     padding: 0px ;
     position: relative;
@@ -39,7 +49,7 @@
     content: '';
     height: 0px;
     width: 0px;
-    /* border-right: 50px solid rgba(255, 0, 0, 0.98); */
+    /* border-right: 50px solid rgba(255, 0, 0, 0.98); 
     border-right: 50px solid #17b6bb;
     border-bottom: 50px solid transparent;
     position: absolute;
@@ -79,7 +89,7 @@
     content: '';
     height: 0px;
     width: 0px;
-    /* border-right: 50px solid rgba(255, 0, 0, 0.98); */
+    /* border-right: 50px solid rgba(255, 0, 0, 0.98); 
     border-right: 50px solid #17b6bb;
     border-bottom: 50px solid transparent;
     position: absolute;
@@ -119,7 +129,7 @@
     content: '';
     height: 0px;
     width: 0px;
-    /* border-right: 50px solid rgba(255, 0, 0, 0.98); */
+    /* border-right: 50px solid rgba(255, 0, 0, 0.98); 
     border-right: 50px solid #17b6bb;
     border-bottom: 50px solid transparent;
     position: absolute;
@@ -139,7 +149,7 @@
 .custom-modal-header .modal-title {
      font-weight: bold;
     font-size: 18px;
-}
+}*/
 
 form {
   position: relative;
