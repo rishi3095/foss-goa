@@ -458,10 +458,11 @@ li.dropdown.dropdown-large>a {
 .dropdown-menu-large .dropdown-header {
   color: #009688;
   font-size: 18px;
+  font-weight:bold;
   display: block;
   padding: 3px 15px;
   clear: both;
-  font-weight: normal;
+  
   line-height: 1.428571429;
   white-space: normal;
 }
